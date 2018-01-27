@@ -446,6 +446,8 @@ PJPEGs can improve compression, consuming [2-10%](http://www.bookofspeed.com/cha
 
 <aside class="note"><b>Note:</b> Why do PJPEGs compress better? Baseline JPEG blocks are encoded one at a time. With PJPEGs, similar [Discrete Cosine Transform](https://en.wikipedia.org/wiki/Discrete_cosine_transform) coefficients across more than one block can be encoded together leading to better compression.</aside>
 
+Another advantage of PJPEGs is that on HTTP2, their first scan layers load simultaneously, which [improves the speed with which users can see initial image contents](https://calendar.perfplanet.com/2016/even-faster-images-using-http2-and-progressive-jpegs/) and enabling the browser to lay out the page elements faster. Combining this with customized scan layers for PJPEGs, e.g. by [providing a custom scans file to mozjpeg](https://calendar.perfplanet.com/wp-content/uploads/2016/12/scans.txt) or using [Cloudinary's custom PJPEG options](http://cloudinary.com/blog/progressive_jpegs_and_green_martians) will render truly meaningful image contents for users faster.
+
 ### <a id="whos-using-progressive-jpegs-in-production" href="#whos-using-progressive-jpegs-in-production">Who’s using Progressive JPEGs in production?</a>
 
 *   [Twitter.com ships Progressive JPEGs](https://www.webpagetest.org/performance_optimization.php?test=170717_NQ_1K9P&run=2#compress_images) with a baseline of quality of 85%. They measured user perceived latency (time to first scan and overall load time) and found overall, PJPEGs were competitive at addressing their requirements for low file-sizes, acceptable transcode and decode times.
