@@ -1542,7 +1542,7 @@ Keeping SVGs lean means stripping out anything unnecessary. SVG files created wi
 *   Delete layers that are invisible.
 *   Avoid any Photoshop or Illustrator effects. They can get converted to large raster images.
 *   Double check for any embedded raster images that aren’t SVG-friendly
-* Use a tool to optimize your SVGs. [SVGOMG](https://jakearchibald.github.io/svgomg/) is a super handy web-based GUI for [SVGO](https://github.com/svg/svgo) by Jake Archibald that I’ve found invaluable. If you use Sketch, the [SVGO Compressor plugin]([Sketch plugin for running SVGO](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)) can be used when exporting to shrink the file size.
+* Use a tool to optimize your SVGs. [SVGOMG](https://jakearchibald.github.io/svgomg/) is a super handy web-based GUI for [SVGO](https://github.com/svg/svgo) by Jake Archibald that I’ve found invaluable. If you use Sketch, the [Sketch plugin for running SVGO](https://www.sketchapp.com/extensions/plugins/svgo-compressor/) can be used when exporting to shrink the file size.
 
 <figure>
 <picture>
