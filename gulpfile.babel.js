@@ -305,10 +305,12 @@ gulp.task('generate-service-worker', () => {
       `*.html`
     ],
     runtimeCaching: [{
-      urlPattern: new RegExp('^https://res.cloudinary.com'),
+      // Match any request ends with .png, .jpg, .jpeg or .svg.
+      // urlPattern: /\.(?:png|jpg|jpeg|svg|gif)$/,
+      urlPattern: new RegExp('/images/'),
       handler: 'staleWhileRevalidate',
       options: {
-        cacheName: 'cloudinary-images',
+        cacheName: 'book-images',
       },
     }],
   });
