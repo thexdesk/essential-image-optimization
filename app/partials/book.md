@@ -597,21 +597,21 @@ By reducing pixels in our chroma components, it’s possible to reduce the size 
 <figure>
 <picture>
 <source
-        data-srcset="images/book-images/subsampling-small.png"
+        data-srcset="images/book-images/subsampling-small.jpg"
         media="(max-width: 640px)" />
 <source
-        data-srcset="images/book-images/subsampling-medium.png"
+        data-srcset="images/book-images/subsampling-medium.jpg"
         media="(max-width: 1024px)" />
 
 <source
-        data-srcset="images/book-images/subsampling-large.png" />
+        data-srcset="images/book-images/subsampling-large.jpg" />
 
 <img
         class="lazyload"
-        data-src="images/book-images/subsampling-large.png"
+        data-src="images/book-images/subsampling-large.jpg"
         alt="Chrome subsampling configurations for a JPEG at quality 80." />
 <noscript>
-  <img src="images/book-images/subsampling-large.png"/>
+  <img src="images/book-images/subsampling-large.jpg"/>
 </noscript>
 </picture>
 <figcaption>Chrome subsampling configurations for a JPEG at quality 80.</figcaption>
