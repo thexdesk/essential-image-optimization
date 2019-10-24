@@ -1254,7 +1254,7 @@ and trim those SVGs down using [svgo](https://github.com/svg/svgo) (which we’l
 find ./ -type f -name '*.svg' -exec svgo {} \;
 ```
 
-Jeremy Wagner has a more comprehensive post on [image optimization using Bash](https://jeremywagner.me/blog/bulk-image-optimization-in-bash) and another on doing this work in [parallel](https://jeremywagner.me/blog/faster-bulk-image-optimization-in-bash) worth reading.
+Jeremy Wagner has a more comprehensive post on [image optimization using Bash](https://jeremy.codes/blog/bulk-image-optimization-in-bash) and another on doing this work in [parallel](https://jeremy.codes/blog/faster-bulk-image-optimization-in-bash) worth reading.
 
 **Other WebP image processing and editing apps include:**
 
