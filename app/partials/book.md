@@ -1496,7 +1496,7 @@ Why are GIFs many times larger? Animated GIFs store each frame as a lossless GIF
 **If you can switch to videos**
 
 *   Use [ffmpeg](https://www.ffmpeg.org/) to convert your animated GIFs (or sources) to H.264 MP4s. I use this one-liner from[ Rigor](http://rigor.com/blog/2015/12/optimizing-animated-gifs-with-html5-video):
-ffmpeg -i animated.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4
+`ffmpeg -i animated.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4`
 *   ImageOptim API also supports [converting animated gifs to WebM/H.264 video](https://imageoptim.com/api/ungif), [removing dithering from GIFs](https://github.com/kornelski/undither#examples) which can help video codecs compress even more.
 
 **If you must use animated GIFs**
