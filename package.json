@@ -72,7 +72,7 @@
         "extends": "google"
     },
     "dependencies": {
-        "lazysizes": "^4.0.1"
+        "lazysizes": "^4.1.8"
     },
     "resolutions": {
         "natives": "1.1.3"
